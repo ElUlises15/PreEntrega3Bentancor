@@ -1,0 +1,100 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-verde-oscuro;
+    padding: 2rem;
+}
+.logoWeb{
+    width: 15rem;
+    border-radius: 50%;
+    border: 0.3rem solid #fff;
+    box-shadow: 0 0.1rem 3rem 0 rgba(#fff, 0.3);
+}
+nav{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    a{
+        width: 20rem;
+        height: 8rem;
+        border: 0.3rem solid #fff;
+        text-decoration: none;
+        color: #ffff;
+        background: rgba($color:#fff, $alpha: 0.15);
+        border-radius: 8px;
+        box-shadow: 0 0.1rem 3rem 0 rgba(#fff, 0.3);
+        backdrop-filter: blur(4px);
+        margin-bottom: 40px;
+        z-index: 0;
+        cursor: pointer;
+        font-weight: 700;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        padding-top: 2rem;
+        overflow: hidden;
+        transition: all 200ms ease;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 1s ease;
+            z-index: -1;
+            background-color: rgba(#fff, 0.4);
+        }
+        &:hover{
+            box-shadow: 0 0 1rem 1rem rgba(#fff, 0.3);
+        }
+        &::before{
+            left: -200%;
+            width: 200%;
+            height: 150%;
+            transform: rotate(45deg);
+        }
+        &:hover{
+            transform:  translateY(-25%);
+            &::before{
+                left: 100%;
+            }
+        }
+    }
+}
+.abrir-menu{
+    display: none;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.cerrar-menu{
+    display: none;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+

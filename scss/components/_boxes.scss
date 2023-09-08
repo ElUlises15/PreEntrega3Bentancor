@@ -1,0 +1,69 @@
+.miniMap{
+    width: 100%;
+    height: 70vh;
+}
+.containerMap{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.containerCard{
+    display: flex;
+    background: linear-gradient(
+        90deg,
+        $color-verde-oscuro 10%,
+        $color-verde 73%
+    );
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 3rem;
+    img{
+        border-radius: 2rem;
+        height: 45rem;
+        width: 35rem;
+    }
+    p{
+        padding: 10rem;
+        font-size: 3rem;
+    }
+}
+
+.boxNegra{
+    background: linear-gradient(
+        90deg,
+        $color-negro 10%,
+        $color-gris 73%
+    );
+    border-radius: 2rem;
+    height: auto;
+    padding: 4rem;
+    margin: 3rem;
+    h3{
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+.conteinerGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.boxGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90vw;
+    margin: 3rem;
+    justify-content: space-around;
+    border: solid .3rem $color-blanco;
+    background: linear-gradient(
+        90deg,
+        $color-verde-claro 10%,
+        $color-verde 73%
+    );
+    iframe{
+        margin: 3rem;
+        border-radius: 8%;
+    }
+}
